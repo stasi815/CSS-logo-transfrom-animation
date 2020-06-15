@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotus Bloom</title>
+    <style>
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lotus-div {
+            width: 1000px;
+            height: 800px;
+            position: relative;
+            border: 1px solid;
+        }
+
+        .petal-1 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+        }
+
+        .petal-2 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 800ms;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-3 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 800ms;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-4 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 900ms;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-5 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 900ms;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-6 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 1s;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-7 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 1s;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-8 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 1.25s;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .petal-9 {
+            width: 400px;
+            height: 400px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(300px, 300px) rotate(-45deg);
+            background-color: rgba(38, 12, 114, 0.454);
+            transition: 1.25s;
+            transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+
+        .leaf-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(245px, 460px) rotate(-75deg);
+            background-color: rgba(11, 119, 11, 0.999);
+            transition: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .leaf-2 {
+            width: 300px;
+            height: 300px;
+            border-radius: 100% 0% 100% 0% / 100% 0% 100% 0% ;
+            position: absolute;
+            transform: translate(455px, 460px) rotate(-15deg);
+            background-color: rgba(11, 119, 11, 0.999);
+            transition: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .lotus-div:hover > .petal-1 {
+            background-color: rgba(196, 20, 82, 0.926);
+        }
+
+        .lotus-div:hover > .petal-2 {
+            transform: translate(200px, 315px) rotate(-65deg);
+            background-color: rgba(235, 58, 27, 0.735);
+        }
+
+        .lotus-div:hover > .petal-3 {
+            transform: translate(400px, 315px) rotate(-25deg);
+            background-color: rgba(235, 58, 27, 0.735);
+        }
+
+        .lotus-div:hover > .petal-4 {
+            transform: translate(200px, 315px) rotate(-85deg);
+            background-color: rgba(24, 155, 170, 0.81);
+        }
+
+        .lotus-div:hover > .petal-5 {
+            transform: translate(400px, 315px) rotate(-5deg);
+            background-color: rgba(24, 155, 170, 0.81);
+
+        }
+
+        .lotus-div:hover > .petal-6 {
+            transform: translate(200px, 315px) rotate(-105deg);
+            background-color: rgba(38, 12, 114, 0.454);
+
+        }
+
+        .lotus-div:hover > .petal-7 {
+            transform: translate(400px, 315px) rotate(15deg);
+            background-color: rgba(38, 12, 114, 0.454);
+
+        }
+
+        .lotus-div:hover > .petal-8 {
+            transform: translate(200px, 315px) rotate(-125deg);
+            background-color: rgba(93, 199, 17, 0.454);
+        }
+
+        .lotus-div:hover > .petal-9 {
+            transform: translate(400px, 315px) rotate(35deg);
+            background-color: rgba(93, 199, 17, 0.454);
+        }
+
+        .lotus-div:hover > .leaf-1 {
+            transform: translate(220px, 520px) rotate(-100deg);
+        }
+
+        .lotus-div:hover > .leaf-2 {
+            transform: translate(480px, 520px) rotate(10deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="lotus-div">
+        <div class="petal-9"></div>
+        <div class="petal-8"></div>
+        <div class="petal-7"></div>
+        <div class="petal-6"></div>
+        <div class="petal-5"></div>
+        <div class="petal-4"></div>
+        <div class="petal-3"></div>
+        <div class="petal-2"></div>
+        <div class="petal-1"></div>
+        <div class="leaf-1"></div>
+        <div class="leaf-2"></div>
+    </div>
+</body>
+</html>
